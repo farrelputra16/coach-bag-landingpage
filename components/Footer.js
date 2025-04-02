@@ -12,7 +12,7 @@ const Footer = () => {
                   letterSpacing: "2px",
                 }}
               >
-                Rohit Bikes
+                y2kcoach
               </h1>
             </a>
             <p className="footer-description">

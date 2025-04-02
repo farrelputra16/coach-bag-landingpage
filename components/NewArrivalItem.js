@@ -8,9 +8,9 @@ const NewArrivalItem = ({ image, name }) => {
               <img src={image} alt="" />
             </div>
             <h3 className="product-name">{name}</h3>
-            <span className="product-price">$3,900.00</span>
+            <span className="product-price">$120-180</span>
           </a>
-          <button className="btn">add to cart</button>
+         
         </div>
       </div>
     </div>

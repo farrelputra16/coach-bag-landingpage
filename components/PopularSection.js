@@ -3,27 +3,27 @@ import PopularItem from "./PopularItem";
 const PopularSection = () => {
   const popularBikesData = [
     {
-      name: "xtrada hardtail",
+      name: "pink leather",
       image: "/images/6489548.png",
     },
     {
-      name: "Polygon Cascade",
+      name: "coach bucket bag",
       image: "/images/Polygon Cascade.png",
     },
     {
-      name: "norco youth bicycle",
+      name: "coach shoulder bag",
       image: "/images/b2.png",
     },
     {
-      name: "mt bromo n7",
+      name: "maroon shoulder bag",
       image: "/images/MTBROMO_N7_2022.png",
     },
     {
-      name: "haibike xduro rx",
+      name: "red leather tote bag",
       image: "/images/b1.png",
     },
     {
-      name: "polygon siskiu",
+      name: "coach tote bag",
       image: "/images/531352.png",
     },
   ];
@@ -34,12 +34,9 @@ const PopularSection = () => {
         <h3 className="second-title to-right show-on-scroll">
           customer choice
         </h3>
-        <h3 className="main-title to-left show-on-scroll">popular bikes</h3>
+        <h3 className="main-title to-left show-on-scroll">popular bags</h3>
         <div className="btn-wrapper">
           <div className="to-top show-on-scroll">
-            <a href="#" className="btn">
-              view all bikes
-            </a>
           </div>
         </div>
       </div>

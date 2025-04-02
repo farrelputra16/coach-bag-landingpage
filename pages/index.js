@@ -3,7 +3,6 @@ import CategorySection from "../components/CategorySection";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import NewArrivalsSection from "../components/NewArrivalsSection";
-import NewsSection from "../components/NewsSection";
 import PopularSection from "../components/PopularSection";
 import SpecialBike from "../components/SpecialBike";
 import Footer from "../components/Footer";
@@ -129,7 +128,6 @@ const Home = () => {
       <NewArrivalsSection />
       <SpecialBike />
       <PopularSection />
-      <NewsSection />
       <Footer />
     </>
   );

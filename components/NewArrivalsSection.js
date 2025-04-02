@@ -3,19 +3,19 @@ import NewArrivalItem from "./NewArrivalItem";
 const NewArrivalsSection = () => {
   const newArrivalBikes = [
     {
-      name: "norco youth bicycle",
+      name: "coach shoulder bag",
       image: "/images/b2.png",
     },
     {
-      name: "  mt bromo n7",
+      name: "Maroon Shoulder Bag",
       image: "/images/MTBROMO_N7_2022.png",
     },
     {
-      name: "haibike xduro rx",
+      name: "Red Leather Tote Bag",
       image: "/images/b1.png",
     },
     {
-      name: "polygon siskiu",
+      name: "coach tote bag",
       image: "/images/531352.png",
     },
   ];
@@ -23,13 +23,10 @@ const NewArrivalsSection = () => {
   return (
     <div className="section">
       <div className="section-title">
-        <h3 className="second-title to-right show-on-scroll">new bikes</h3>
+        <h3 className="second-title to-right show-on-scroll">new collections</h3>
         <h3 className="main-title to-left show-on-scroll">new arrivals</h3>
         <div className="btn-wrapper">
           <div className="to-top show-on-scroll">
-            <a href="#" className="btn ">
-              view all bikes
-            </a>
           </div>
         </div>
       </div>
@@ -43,10 +40,9 @@ const NewArrivalsSection = () => {
                   <div className="product-card-img">
                     <img src="/images/Polygon Cascade.png" alt="" />
                   </div>
-                  <h3 className="product-name">polygon cascade</h3>
-                  <span className="product-price">$3,900.00</span>
+                  <h3 className="product-name">coach bucket bag</h3>
+                  <span className="product-price">$155.0</span>
                 </a>
-                <button className="btn">add to cart</button>
               </div>
             </div>
           </div>

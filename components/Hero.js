@@ -3,15 +3,15 @@ import SlideItem from "./SlideItem";
 const Hero = () => {
   const bikeData = [
     {
-      name: "polygon siskiu",
+      name: "Maroon Red",
       image: "/images/MTBROMO_N7_2022.png",
     },
     {
-      name: "mt bromo n7",
+      name: "Pink Leather",
       image: "/images/6489548.png",
     },
     {
-      name: "cascade mount",
+      name: "Red Signature",
       image: "/images/b1.png",
     },
   ];
@@ -23,7 +23,7 @@ const Hero = () => {
           <SlideItem name={name} image={image} key={index} />
         ))}
 
-        <div className="hero-txt">you ride</div>
+        <div className="hero-txt">y2kcoach</div>
 
         <ul className="slide-control">
           <li className="slide-prev">

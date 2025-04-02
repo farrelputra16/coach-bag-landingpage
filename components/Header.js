@@ -5,7 +5,7 @@ const Header = () => {
         <h1
           style={{ fontSize: "3rem", fontWeight: "900", letterSpacing: "2px" }}
         >
-          Rohit Bikes
+          y2kcoach
         </h1>
       </a>
       <div className="main-menu-wrapper">
@@ -17,9 +17,6 @@ const Header = () => {
           </li>
           <li>
             <a href="#">shop</a>
-          </li>
-          <li>
-            <a href="#">dealer</a>
           </li>
           <li>
             <a href="#">about</a>

@@ -9,12 +9,12 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Rohit Bikes</title>
+        <title>y2kcoach</title>
         <meta
           name="description"
-          content="Bikes E-commerce store landing page"
+          content="Stylish bags for women - Shop the latest trends!"
         />
-        <link rel="icon" href="/bike.png" />
+        <link rel="icon" href="/bag-icon.png" /> {/* Replace with your bag icon */}
       </Head>
       <Component {...pageProps} />
     </>

@@ -9,11 +9,11 @@
 }
 
 :root {
-  --main-color: #1d1d1d;
-  --second-color: #3a3a3a;
-  --txt-color: #bbbbbb;
-  --txt-white: #ffffff;
-  --bg-black: #000;
+  --main-color: #ffe6f0; /* Light pink background */
+  --second-color: #ff99cc; /* Medium pink for accents */
+  --txt-color: #ff6699; /* Bright pink text */
+  --txt-white: #ffffff; /* Keep white for contrast */
+  --bg-black: #ff3399; /* Darker pink for hover effects */
 
   --header-height: 144px;
   --header-padding: 93px;
@@ -44,7 +44,7 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 header {
@@ -172,6 +172,7 @@ header.shrink {
   text-transform: capitalize;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--txt-color); /* Pink stroke */
   transform: translateX(-200px);
   transition: transform 0.5s ease 0s;
 }
@@ -198,8 +199,8 @@ header.shrink {
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 50px;
-  background-color: var(--txt-white);
-  color: var(--main-color);
+  background-color: var(--second-color); /* Medium pink button */
+  color: var(--txt-white);
   transition: transform 0.3s ease 0s;
 }
 
@@ -222,6 +223,7 @@ header.shrink {
 
 .hero-btn:hover {
   transform: translateY(-10px);
+  background-color: var(--bg-black); /* Darker pink on hover */
 }
 
 .hero-txt {
@@ -424,6 +426,7 @@ header.shrink {
   font-size: 9rem;
   -webkit-text-stroke-width: 2px;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--txt-color); /* Pink stroke */
 }
 
 .special-section .section-title .btn {
@@ -532,7 +535,7 @@ footer {
 }
 
 .subscribe-form > input:focus {
-  outline: 3px solid blue;
+  outline: 3px solid #ff66cc; /* Pink outline for focus */
 }
 
 .subscribe-form > button {
@@ -540,6 +543,8 @@ footer {
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
+  background-color: var(--second-color); /* Pink button */
+  color: var(--txt-white);
 }
 
 .footer-header {
