@@ -45,9 +45,6 @@ const Footer = () => {
                 <a href="#">about</a>
               </li>
               <li>
-                <a href="#">service</a>
-              </li>
-              <li>
                 <a href="#">product</a>
               </li>
               <li>
@@ -61,24 +58,11 @@ const Footer = () => {
                 <a href="#">gallery</a>
               </li>
               <li>
-                <a href="#">gears</a>
-              </li>
-              <li>
-                <a href="#">faq</a>
-              </li>
-              <li>
                 <a href="#">contact</a>
               </li>
             </ul>
           </div>
           <div className="col-4">
-            <h3 className="footer-header">news letter</h3>
-            <p className="footer-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              quibusdam enim quaerat natus sit beatae. Corrupti error explicabo
-              commodi beatae non. Aut ipsam nemo quibusdam quia molestias, non
-              maiores reprehenderit.
-            </p>
             <div className="subscribe-form">
               <input type="text" name="" placeholder="Your Email..." />
               <button className="btn">subscribe now</button>
