@@ -114,10 +114,78 @@ header.shrink {
   margin-left: 20px;
 }
 
+/* Hero section with moving background images */
 .hero {
   height: 100vh;
   padding-top: var(--header-height);
   position: relative;
+  overflow: hidden; /* Prevents images from overflowing */
+}
+
+/* Container for background images */
+.hero::before,
+.hero::after,
+.hero .bg-image-3 {
+  content: "";
+  position: absolute;
+  width: 100px; /* Small size */
+  height: 100px; /* Small size */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Slight transparency */
+  z-index: 0; /* Behind content */
+  pointer-events: none; /* Ensures they don’t interfere with clicks */
+}
+
+/* Hello Kitty */
+.hero::before {
+  background-image: url("../public/images/hellokitty.png");
+  top: 20%;
+  left: 10%;
+  animation: drift 20s infinite linear;
+}
+
+/* Kuromi */
+.hero::after {
+  background-image: url("../public/images/kuromi.png");
+  top: 50%;
+  left: 30%;
+  animation: drift 25s infinite linear reverse; /* Reverse direction */
+}
+
+/* Sonny Angels */
+.hero .bg-image-3 {
+  background-image: url("../public/images/sonnyangels.png");
+  top: 70%;
+  left: 60%;
+  animation: drift 22s infinite linear;
+}
+
+/* Animation for drifting effect */
+@keyframes drift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(20vw) translateY(-10vh);
+  }
+  50% {
+    transform: translateX(40vw) translateY(5vh);
+  }
+  75% {
+    transform: translateX(60vw) translateY(-15vh);
+  }
+  100% {
+    transform: translateX(80vw) translateY(0);
+  }
+}
+
+/* Ensure content stays above background */
+.slide-container,
+.hero-txt,
+.slide-control {
+  position: relative;
+  z-index: 1; /* Above background images */
 }
 
 .slide-container {
@@ -448,7 +516,117 @@ header.shrink {
   left: 7rem;
   bottom: -290px;
 }
+/* [Previous CSS unchanged until the end] */
 
+/* New Arrivals Section with moving background images */
+.new-arrivals-bg {
+  padding: 12rem 0 0; /* Existing .section padding */
+  position: relative;
+  overflow: hidden; /* Prevents images from overflowing */
+}
+/* [Previous CSS unchanged until the end] */
+
+/* Popular Section with moving background images */
+.popular-section-bg {
+  padding: 12rem 0 0; /* Existing .section padding */
+  position: relative;
+  overflow: hidden; /* Prevents images from overflowing */
+}
+
+/* Container for background images */
+.popular-section-bg::before,
+.popular-section-bg::after,
+.popular-section-bg .bg-image-3 {
+  content: "";
+  position: absolute;
+  width: 100px; /* Small size */
+  height: 100px; /* Small size */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Slight transparency */
+  z-index: 0; /* Behind content */
+  pointer-events: none; /* Ensures they don’t interfere with clicks */
+}
+
+/* Hello Kitty */
+.popular-section-bg::before {
+  background-image: url("../public/images/hellokitty.png");
+  top: 20%;
+  left: 10%;
+  animation: drift 20s infinite linear;
+}
+
+/* Kuromi */
+.popular-section-bg::after {
+  background-image: url("../public/images/kuromi.png");
+  top: 50%;
+  left: 30%;
+  animation: drift 25s infinite linear reverse; /* Reverse direction */
+}
+
+/* Sonny Angels */
+.popular-section-bg .bg-image-3 {
+  background-image: url("../public/images/sonnyangels.png");
+  top: 70%;
+  left: 60%;
+  animation: drift 22s infinite linear;
+}
+
+/* Ensure content stays above background */
+.popular-section-bg .section-title,
+.popular-section-bg .section-content {
+  position: relative;
+  z-index: 1; /* Above background images */
+}
+
+/* [No changes to existing CSS above this point] */
+/* Container for background images */
+.new-arrivals-bg::before,
+.new-arrivals-bg::after,
+.new-arrivals-bg .bg-image-3 {
+  content: "";
+  position: absolute;
+  width: 100px; /* Small size */
+  height: 100px; /* Small size */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Slight transparency */
+  z-index: 0; /* Behind content */
+  pointer-events: none; /* Ensures they don’t interfere with clicks */
+}
+
+/* Hello Kitty */
+.new-arrivals-bg::before {
+  background-image: url("../public/images/hellokitty.png");
+  top: 20%;
+  left: 10%;
+  animation: drift 20s infinite linear;
+}
+
+/* Kuromi */
+.new-arrivals-bg::after {
+  background-image: url("../public/images/kuromi.png");
+  top: 50%;
+  left: 30%;
+  animation: drift 25s infinite linear reverse; /* Reverse direction */
+}
+
+/* Sonny Angels */
+.new-arrivals-bg .bg-image-3 {
+  background-image: url("../public/images/sonnyangels.png");
+  top: 70%;
+  left: 60%;
+  animation: drift 22s infinite linear;
+}
+
+/* Ensure content stays above background */
+.new-arrivals-bg .section-title,
+.new-arrivals-bg .section-content {
+  position: relative;
+  z-index: 1; /* Above background images */
+}
+
+/* [No changes to existing CSS above this point] */
 .news-card {
   padding: 20px;
 }
@@ -487,16 +665,47 @@ header.shrink {
   color: var(--txt-white);
 }
 
+/* [Previous CSS unchanged until footer section] */
+
 footer {
   background-color: var(--second-color);
-  margin-top: 90px;
-  padding-bottom: 60px;
+  margin-top: 60px; /* Reduced from 90px */
+  padding-bottom: 20px; /* Reduced from 60px */
+}
+
+.footer-compact {
+  padding: 2rem 2rem 0; /* Reduced from 7rem 7rem 0 */
 }
 
 .footer-description {
-  margin: 30px 0;
+  margin: 10px 0; /* Reduced from 30px 0 */
+  font-size: 1rem; /* Explicitly set smaller size */
 }
 
+/* Ensure mobile responsiveness */
+@media (max-width: 767px) {
+  footer {
+    padding-bottom: 15px; /* Even smaller on mobile */
+  }
+  .footer-compact {
+    padding: 1rem 1rem 0; /* Tighter padding on mobile */
+  }
+  .footer-description {
+    font-size: 0.9rem; /* Slightly smaller on mobile */
+  }
+  .logo h1 {
+    font-size: 1.5rem; /* Smaller logo on mobile */
+  }
+}
+.category-link {
+  display: block; /* Ensures the entire area is clickable */
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps text color consistent */
+}
+
+.category-link:hover .category-title {
+  color: var(--txt-white); /* Optional: Highlight title on hover */
+}
 .socials {
   display: flex;
 }

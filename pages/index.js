@@ -122,9 +122,11 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+    <Header />
       <Hero />
-      <CategorySection />
+      <div id="category-section">
+        <CategorySection />
+      </div>
       <NewArrivalsSection />
       <SpecialBike />
       <PopularSection />

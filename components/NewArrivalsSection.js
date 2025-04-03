@@ -3,34 +3,32 @@ import NewArrivalItem from "./NewArrivalItem";
 const NewArrivalsSection = () => {
   const newArrivalBikes = [
     {
-      name: "coach shoulder bag",
+      name: "new collections",
       image: "/images/b2.png",
     },
     {
-      name: "Maroon Shoulder Bag",
+      name: "new collections",
       image: "/images/MTBROMO_N7_2022.png",
     },
     {
-      name: "Red Leather Tote Bag",
+      name: "new collections",
       image: "/images/b1.png",
     },
     {
-      name: "coach tote bag",
+      name: "new collections",
       image: "/images/531352.png",
     },
   ];
 
   return (
-    <div className="section">
+    <div className="section new-arrivals-bg">
       <div className="section-title">
         <h3 className="second-title to-right show-on-scroll">new collections</h3>
         <h3 className="main-title to-left show-on-scroll">new arrivals</h3>
         <div className="btn-wrapper">
-          <div className="to-top show-on-scroll">
-          </div>
+          <div className="to-top show-on-scroll"></div>
         </div>
       </div>
-
       <div className="section-content">
         <div className="row">
           <div className="col-5 col-center">
@@ -55,6 +53,7 @@ const NewArrivalsSection = () => {
           </div>
         </div>
       </div>
+      <div className="bg-image-3"></div> {/* Added for Sonny Angels */}
     </div>
   );
 };

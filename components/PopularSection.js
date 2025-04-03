@@ -3,41 +3,40 @@ import PopularItem from "./PopularItem";
 const PopularSection = () => {
   const popularBikesData = [
     {
-      name: "pink leather",
+      name: "popular",
       image: "/images/6489548.png",
     },
     {
-      name: "coach bucket bag",
+      name: "popular",
       image: "/images/Polygon Cascade.png",
     },
     {
-      name: "coach shoulder bag",
+      name: "popular",
       image: "/images/b2.png",
     },
     {
-      name: "maroon shoulder bag",
+      name: "popular",
       image: "/images/MTBROMO_N7_2022.png",
     },
     {
-      name: "red leather tote bag",
+      name: "popular",
       image: "/images/b1.png",
     },
     {
-      name: "coach tote bag",
+      name: "popular",
       image: "/images/531352.png",
     },
   ];
 
   return (
-    <div className="section">
+    <div className="section popular-section-bg">
       <div className="section-title">
         <h3 className="second-title to-right show-on-scroll">
           customer choice
         </h3>
         <h3 className="main-title to-left show-on-scroll">popular bags</h3>
         <div className="btn-wrapper">
-          <div className="to-top show-on-scroll">
-          </div>
+          <div className="to-top show-on-scroll"></div>
         </div>
       </div>
       <div className="section-content">
@@ -47,6 +46,7 @@ const PopularSection = () => {
           ))}
         </div>
       </div>
+      <div className="bg-image-3"></div> {/* Added for Sonny Angels */}
     </div>
   );
 };

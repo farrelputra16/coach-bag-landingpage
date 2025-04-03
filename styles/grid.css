@@ -8,6 +8,11 @@
   padding: 0 15px;
   width: 100%; /* Default to full width on mobile */
 }
+@media (min-width: 768px) {
+  .col-custom {
+    width: 20%; /* Custom smaller width */
+  }
+}
 
 /* Desktop Grid */
 @media (min-width: 768px) {

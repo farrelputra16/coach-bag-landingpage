@@ -16,33 +16,10 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#">shop</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
+          <a href="#category-section">contact</a>
           </li>
         </ul>
       </div>
-      <ul className="user-menu">
-        <li>
-          <a href="#">
-            <i className="bx bx-shopping-bag"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="bx bx-user"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="bx bx-search"></i>
-          </a>
-        </li>
-      </ul>
     </header>
   );
 };
