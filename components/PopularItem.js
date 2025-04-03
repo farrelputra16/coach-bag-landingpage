@@ -1,15 +1,9 @@
-const PopularItem = ({ name, image }) => {
+const PopularItem = ({ image }) => {
   return (
-    <div className="col-3">
-      <div className="to-top show-on-scroll">
-        <div className="product-card">
-          <a href="#">
-            <div className="product-card-img">
-              <img src={image} alt="" />
-            </div>
-            <h3 className="product-name">{name}</h3>
-            <span className="product-price">$120-200</span>
-          </a>
+    <div className="col-4 testimonial-item">
+      <div className="product-card">
+        <div className="product-card-img">
+          <img src={image} alt="Testimonial" />
         </div>
       </div>
     </div>

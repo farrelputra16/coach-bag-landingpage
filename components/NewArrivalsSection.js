@@ -38,8 +38,8 @@ const NewArrivalsSection = () => {
                   <div className="product-card-img">
                     <img src="/images/Polygon Cascade.png" alt="" />
                   </div>
-                  <h3 className="product-name">coach bucket bag</h3>
-                  <span className="product-price">$155.0</span>
+                  <h3 className="product-name">New Collection</h3>
+                  <span className="product-price">Contact for Price</span>
                 </a>
               </div>
             </div>

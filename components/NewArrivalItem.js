@@ -8,7 +8,7 @@ const NewArrivalItem = ({ image, name }) => {
               <img src={image} alt="" />
             </div>
             <h3 className="product-name">{name}</h3>
-            <span className="product-price">$120-180</span>
+            <span className="product-price">Contact for price</span>
           </a>
          
         </div>

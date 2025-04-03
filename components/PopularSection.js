@@ -2,39 +2,22 @@ import PopularItem from "./PopularItem";
 
 const PopularSection = () => {
   const popularBikesData = [
-    {
-      name: "popular",
-      image: "/images/6489548.png",
-    },
-    {
-      name: "popular",
-      image: "/images/Polygon Cascade.png",
-    },
-    {
-      name: "popular",
-      image: "/images/b2.png",
-    },
-    {
-      name: "popular",
-      image: "/images/MTBROMO_N7_2022.png",
-    },
-    {
-      name: "popular",
-      image: "/images/b1.png",
-    },
-    {
-      name: "popular",
-      image: "/images/531352.png",
-    },
+    { name: "popular", image: "/images/testimonial1.jpg" },
+    { name: "popular", image: "/images/testimonial2.jpg" },
+    { name: "popular", image: "/images/testimonial3.jpg" },
+    { name: "popular", image: "/images/testimonial4.jpg" },
+    { name: "popular", image: "/images/testimonial5.jpg" },
+    { name: "popular", image: "/images/testimonial6.jpg" },
+    { name: "popular", image: "/images/testimonial7.jpg" },
   ];
 
   return (
     <div className="section popular-section-bg">
       <div className="section-title">
         <h3 className="second-title to-right show-on-scroll">
-          customer choice
+          Testimonials & Reviews
         </h3>
-        <h3 className="main-title to-left show-on-scroll">popular bags</h3>
+        <h3 className="main-title to-left show-on-scroll"></h3>
         <div className="btn-wrapper">
           <div className="to-top show-on-scroll"></div>
         </div>
