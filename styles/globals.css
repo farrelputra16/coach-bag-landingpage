@@ -791,3 +791,30 @@ footer {
   transform: translateY(0);
   opacity: 1;
 }
+/* [Previous CSS unchanged until the end] */
+
+/* Override image size for testimonials */
+.testimonial-item .product-card-img img {
+  max-width: 100%; /* Increase from 50% to full width of container */
+  width: 100%; /* Ensure it fills the column */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust product card for testimonials */
+.testimonial-item .product-card {
+  padding: 10px; /* Reduce padding for tighter fit */
+}
+
+/* Ensure images are prominent */
+.testimonial-item .product-card-img {
+  margin-bottom: 0; /* Remove bottom margin since no text follows */
+}
+
+/* Optional: Adjust grid for larger images on desktop */
+@media (min-width: 768px) {
+  .testimonial-item {
+    width: 33.33%; /* Keep col-4, but can adjust to col-6 (50%) or col-3 (25%) if needed */
+  }
+}
+
+/* [No changes to existing CSS above this point] */
