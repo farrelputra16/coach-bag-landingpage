@@ -490,7 +490,7 @@ header.shrink {
   bottom: 0;
   left: 0; /* Ensure it starts from the left */
   width: 100%; /* Full width to prevent cutoff */
-  color: var(--txt-white);
+  color: var(--txt-black);
   text-transform: capitalize;
   word-wrap: break-word; /* Prevent text overflow */
 }
