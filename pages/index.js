@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import CategorySection from "../components/CategorySection";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import NewArrivalsSection from "../components/NewArrivalsSection";
 import PopularSection from "../components/PopularSection";
-import SpecialBike from "../components/SpecialBike";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -127,8 +125,6 @@ const Home = () => {
       <div id="category-section">
         <CategorySection />
       </div>
-      <NewArrivalsSection />
-      <SpecialBike />
       <PopularSection />
       <Footer />
     </>
