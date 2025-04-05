@@ -461,7 +461,7 @@ header.shrink {
 
 .category-img {
   padding: 4rem;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -1001,7 +1001,7 @@ footer {
 
   .category-img {
     padding: 1rem; /* Reduced padding */
-    height: 300px; /* Smaller height for mobile */
+    height: 400px; /* Smaller height for mobile */
   }
 
   .category-title {
