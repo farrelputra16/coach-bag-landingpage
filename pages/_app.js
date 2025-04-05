@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
           name="description"
           content="Stylish bags for women - Shop the latest trends!"
         />
-        <link rel="icon" href="/bag-icon.png" /> {/* Replace with your bag icon */}
+        <link rel="icon" href="/images/icon.png" /> {/* Replace with your bag icon */}
       </Head>
       <Component {...pageProps} />
     </>
